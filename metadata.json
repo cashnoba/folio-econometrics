@@ -1,0 +1,6 @@
+{
+  "name": "Folio Econometrics",
+  "description": "Academic econometric data explorer converting CSV and Excel datasets into automated exploratory diagnostics, reproducible Stata .do scripts, and publication-ready LaTeX tables with an AI econometric assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

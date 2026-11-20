@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-canvas: #FAF8F4;
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #F4F1EA;
+  --color-hairline: #E5E0D6;
+  --color-hairline-strong: #CFC7B8;
+  --color-ink: #17202A;
+  --color-ink-muted: #52606D;
+  --color-ink-faint: #7B8794;
+  --color-navy: #1B365D;
+  --color-navy-hover: #132847;
+  --color-nominal: #166534;
+  --color-caution: #B45309;
+  --color-alert: #991B1B;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  /* Subtle academic scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F4F1EA;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CFC7B8;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9CA3AF;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
